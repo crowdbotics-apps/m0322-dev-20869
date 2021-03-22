@@ -22,6 +22,7 @@ import { widthPercentageToDP as wp } from "react-native-responsive-screen"
 class Blank extends React.Component {
   constructor(props) {
     super(props)
+
     this.state = {}
   }
   static navigationOptions = ({ navigation }) => {
@@ -36,15 +37,27 @@ class Blank extends React.Component {
             "https://crowdbotics-slack-dev.s3.amazonaws.com/media/resources/project/20869/6048c3f1-3868-46b3-a3da-6328d741a374.jpg"
         }}
       />
+      <Button
+        title="Button"
+        color="#c4d2fd"
+        style={styles.Button_5}
+        onPress={() => alert("Pressed!")}
+      />
     </View>
   )
 }
 
-const styles = StyleSheet.create({ View_1: {}, Image_3: {} })
+const styles = StyleSheet.create({
+  View_1: {},
+  Image_3: {},
+  Button_5: { textAlign: "center" }
+})
 const mapStateToProps = state => {
   return {}
 }
+
 const mapDispatchToProps = () => {
   return {}
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(Blank)
