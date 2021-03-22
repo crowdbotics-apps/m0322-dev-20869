@@ -31,16 +31,17 @@ class Blank extends React.Component {
 
   render = () => (
     <View>
+      <Text style={styles.Text_7}>Hello, World!</Text>
       <Image
         source={{
           uri:
             "https://crowdbotics-slack-dev.s3.amazonaws.com/media/resources/project/20869/6048c3f1-3868-46b3-a3da-6328d741a374.jpg"
         }}
+        style={styles.Image_3}
       />
       <Button
         title="Button"
         color="#c4d2fd"
-        style={styles.Button_5}
         onPress={() => alert("Pressed!")}
       />
     </View>
@@ -49,9 +50,17 @@ class Blank extends React.Component {
 
 const styles = StyleSheet.create({
   View_1: {},
-  Image_3: {},
-  Button_5: { textAlign: "center" }
+  Text_7: {
+    marginTop: 10,
+    marginBottom: 8,
+    alignSelf: "center",
+    fontSize: 30,
+    color: "#3e4fd0"
+  },
+  Image_3: { width: 200, height: 200 },
+  Button_5: {}
 })
+
 const mapStateToProps = state => {
   return {}
 }
